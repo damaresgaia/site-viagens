@@ -1,32 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roteiro dos Sonhos</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #ccc;
+            padding-top: 70px;
+        }
+
+        header#cabecalho {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+
+        }
+    </style>
 </head>
-<body>    
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Roteiro dos Sonhos</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#pacotes">Pacotes</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#promocoes">Promoções</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Início</h2>
+        </section>
+        <section id="pacotes">
+            <h2>Pacotes</h2>
+        </section>
+        <section id="promocoes">
+            <h2>Promoções</h2>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+        </section>
+    </div>
+
     <div class="container">
-        <h1>Roteiro dos Sonhos</h1>
         <div id="carousel-images" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div data-bs-interval="3000" class="carousel-item active">
-                    <img class="d-block w-100" src="https://images.pexels.com/photos/10431338/pexels-photo-10431338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+                    <img class="d-block w-100"
+                        src="https://images.pexels.com/photos/10431338/pexels-photo-10431338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                     <div class="carousel-caption">
-                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ab repellendus consequatur provident iure, reprehenderit illo sequi cum quaerat, et ducimus officiis natus mollitia? Odit modi autem officiis quod delectus.</h2>
+                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ab repellendus consequatur
+                            provident iure, reprehenderit illo sequi cum quaerat, et ducimus officiis natus mollitia?
+                            Odit modi autem officiis quod delectus.</h2>
                     </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
-                    <img class="d-block w-100" src="https://images.pexels.com/photos/10419946/pexels-photo-10419946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <img class="d-block w-100"
+                        src="https://images.pexels.com/photos/10419946/pexels-photo-10419946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
                     <div class="carousel-caption">
-                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ab repellendus consequatur provident iure, reprehenderit illo sequi cum quaerat, et ducimus officiis natus mollitia? Odit modi autem officiis quod delectus.</h2>
+                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ab repellendus consequatur
+                            provident iure, reprehenderit illo sequi cum quaerat, et ducimus officiis natus mollitia?
+                            Odit modi autem officiis quod delectus.</h2>
                     </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
-                    <img class="d-block w-100" src="https://images.pexels.com/photos/10419954/pexels-photo-10419954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <img class="d-block w-100"
+                        src="https://images.pexels.com/photos/10419954/pexels-photo-10419954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
                     <div class="carousel-caption">
-                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ab repellendus consequatur provident iure, reprehenderit illo sequi cum quaerat, et ducimus officiis natus mollitia? Odit modi autem officiis quod delectus.</h2>
+                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ab repellendus consequatur
+                            provident iure, reprehenderit illo sequi cum quaerat, et ducimus officiis natus mollitia?
+                            Odit modi autem officiis quod delectus.</h2>
                     </div>
                 </div>
             </div>
@@ -56,7 +131,9 @@
                         <h4 class="card-title">Título do card</h4>
                         <h5 class="card-subtitle">Subtítulo do card</h5>
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis optio et labore voluptas a. Dolor perferendis officia alias rerum facilis doloremque natus odio illo placeat. Suscipit eius nulla voluptatem.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis optio et labore
+                            voluptas a. Dolor perferendis officia alias rerum facilis doloremque natus odio illo
+                            placeat. Suscipit eius nulla voluptatem.
                         </p>
                         <a href="#" class="btn btn-primary">Botão link</a>
                     </div>
@@ -72,7 +149,9 @@
                         <h4 class="card-title">Título do card</h4>
                         <h5 class="card-subtitle">Subtítulo do card</h5>
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis optio et labore voluptas a. Dolor perferendis officia alias rerum facilis doloremque natus odio illo placeat. Suscipit eius nulla voluptatem.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis optio et labore
+                            voluptas a. Dolor perferendis officia alias rerum facilis doloremque natus odio illo
+                            placeat. Suscipit eius nulla voluptatem.
                         </p>
                         <a href="#" class="btn btn-primary">Botão link</a>
                     </div>
@@ -88,15 +167,18 @@
                         <h4 class="card-title">Título do card</h4>
                         <h5 class="card-subtitle">Subtítulo do card</h5>
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis optio et labore voluptas a. Dolor perferendis officia alias rerum facilis doloremque natus odio illo placeat. Suscipit eius nulla voluptatem.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis optio et labore
+                            voluptas a. Dolor perferendis officia alias rerum facilis doloremque natus odio illo
+                            placeat. Suscipit eius nulla voluptatem.
                         </p>
                         <a href="#" class="btn btn-primary">Botão link</a>
                     </div>
                 </article>
-            </div>        
+            </div>
         </div>
     </div>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
